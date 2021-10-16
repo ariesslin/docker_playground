@@ -1,6 +1,6 @@
-export tag=v1.0
+export tag=v2.0
 root:
-	export ROOT=github.com/cncamp/golang
+	export ROOT=docker_playground/homework
 
 build:
 	echo "building httpserver binary"
@@ -13,4 +13,4 @@ release: build
 
 push: release
 	echo "pushing ariesslin/httpserver_test"
-	docker push ariesslin/httpserver_test:v1.0
+	docker push ariesslin/httpserver_test:${tag}
